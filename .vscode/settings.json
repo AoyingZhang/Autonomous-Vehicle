@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Motor Module",
+        "./Land Detection Module"
+    ]
+}
