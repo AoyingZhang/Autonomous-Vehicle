@@ -16,11 +16,11 @@ class Motor():
         GPIO.setup(self.In2A, GPIO.OUT)
         GPIO.setup(self.EnaB, GPIO.OUT)
         GPIO.setup(self.In1B, GPIO.OUT)
-        GPIO.setup(self.IN2B, GPIO.OUT)
-        self.pwm1 = GPIO.PWM(self. EnaA, 100);
-        self.pwm1 = start(0);
-        self.pwm2 = GPIO.PWM(self.EnaB, 100);
-        self.pwm2 = start(0);
+        GPIO.setup(self.In2B, GPIO.OUT)
+        self.pwm1 = GPIO.PWM(self. EnaA, 100)
+        self.pwm1 = start(0)
+        self.pwm2 = GPIO.PWM(self.EnaB, 100)
+        self.pwm2 = start(0)
 
     def move(self, speed = 0.5, turn = 0, t = 0):
         speed *= 100
